@@ -1,0 +1,20 @@
+.stats-grid {
+    @apply grid md:grid-cols-4 gap-6 m-12;
+}
+
+.stat-card {
+    @apply text-center p-6 hover:shadow-lg transition-shadow;
+}
+
+  
+.stat-icon {
+    @apply flex justify-center mb-4 text-red-600;
+  }
+  
+  .stat-title {
+    @apply font-bold text-lg mb-2;
+  }
+  
+  .stat-description {
+    @apply text-sm text-gray-600;
+  }

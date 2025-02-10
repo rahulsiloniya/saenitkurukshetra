@@ -3,7 +3,6 @@ import Navbar from '../Navbar/Navbar';
 import HeroSection from '../HomePage/HeroSection/HeroSection';
 import Footer from '../Footer/Footer';
 import InfoBlock from '../InfoBlock/InfoBlock';
-
 const title = () => {
     return (
         <>

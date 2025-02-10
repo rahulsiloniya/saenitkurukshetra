@@ -1,5 +1,7 @@
 import { Card, CardHeader, CardContent } from './CardComponents';
 import { GraduationCap, Wrench, Users, Monitor } from 'lucide-react';
+import { Bolt, Cpu, Code } from "lucide-react";
+import Options from './Options';
 import './InfoBlock.css';
 
 const InfoBlock = () => {
@@ -26,6 +28,29 @@ const InfoBlock = () => {
     }
   ];
 
+  const options = [
+    {
+      icon: <Wrench className="icon" />,
+      title: "Combustion Vehicle",
+      description: "Dive deep into traditional combustion engines"
+    },
+    {
+      icon: <Bolt className="icon" />,
+      title: "Electric Vehicle",
+      description: "Explore the technology behind electric mobility"
+    },
+    {
+      icon: <Cpu className="icon" />,
+      title: "IoT",
+      description: "Learn how IoT integrates with automotive innovations"
+    },
+    {
+      icon: <Code className="icon" />,
+      title: "Software",
+      description: "Discover the software driving modern vehicles"
+    }
+  ];
+
   return (
     <div className="container">
       <div className='title-section'>
@@ -34,7 +59,7 @@ const InfoBlock = () => {
         </h1>
       </div>
 
-      <div className='info-grid'>
+      <div>  {/* className='info-grid' */}
         <Card>
           <CardHeader className='card-header'>
             <h2 className='card-title'>About Autokriti</h2>
@@ -49,7 +74,7 @@ const InfoBlock = () => {
           </CardContent>
         </Card>
 
-        <Card>
+        {/* <Card>
           <CardHeader className='card-header'>
             <h2 className='card-title'>Digital Evolution</h2>
           </CardHeader>
@@ -60,10 +85,11 @@ const InfoBlock = () => {
               our reach and enhancing engagement through innovative online learning experiences.
             </p>
           </CardContent>
-        </Card>
+        </Card> */}
       </div>
-
-      <div className='stats-grid'>
+      
+      <Options children={stats} />
+      {/* <div className='stats-grid'>
         {stats.map((stat, index) => (
           <Card key={index} className='stat-card'>
             <div className='stat-icon'>
@@ -73,7 +99,38 @@ const InfoBlock = () => {
             <p className='stat-description'>{stat.description}</p>
           </Card>
         ))}
-      </div>
+      </div> */}
+
+      <Card>
+          <CardHeader className='card-header'>
+            <h2 className='card-title'>What's Inside?</h2>
+          </CardHeader>
+          <CardContent className='card-content'>
+            <p className='card-text'>
+            Passionate about automobiles but unsure where to start? Let Autokriti be your 
+            launchpad into the future of mobility! From dismantling engines to decoding the latest 
+            in automotive tech, we’ve evolved into North India’s largest automotive workshop—and 
+            this year, we’re taking things even further.
+            </p>
+            <br />
+            <p className='card-text'>
+            Keep your heads up for the latest edition of Autokriti this year.
+            </p>
+          </CardContent>
+      </Card>
+
+        <Options children={options} />
+        {/* <div className='stats-grid'>
+          {options.map((option, index) => (
+            <Card key={index} className='stat-card'>
+              <div className='stat-icon'>
+                {option.icon}
+              </div>
+              <h3 className='stat-title'>{option.title}</h3>
+              <p className='stat-description'>{option.description}</p>
+            </Card>
+          ))}
+        </div> */}
     </div>
   );
 };
