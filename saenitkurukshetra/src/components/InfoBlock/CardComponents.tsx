@@ -7,7 +7,7 @@ interface CardProps {
 
 export const Card = ({ children, className = '' }: CardProps) => {
   return (
-    <div className={`bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 ${className}`}>
+    <div className={`bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 m-12 ${className}`}>
       {children}
     </div>
   );
@@ -15,7 +15,7 @@ export const Card = ({ children, className = '' }: CardProps) => {
 
 export const CardHeader = ({ children, className = '' }: CardProps) => {
   return (
-    <div className={`p-6 ${className}`}>
+    <div className={`p-6 m-12 ${className}`}>
       {children}
     </div>
   );
@@ -23,7 +23,7 @@ export const CardHeader = ({ children, className = '' }: CardProps) => {
 
 export const CardContent = ({ children, className = '' }: CardProps) => {
   return (
-    <div className={`p-6 ${className}`}>
+    <div className={`p-6 m-12 ${className}`}>
       {children}
     </div>
   );
