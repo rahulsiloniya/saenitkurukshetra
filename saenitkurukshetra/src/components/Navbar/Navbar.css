@@ -1,0 +1,72 @@
+/* Main navbar styles */
+.navbar {
+  @apply fixed top-0 w-full bg-white/85 backdrop-blur-sm shadow-sm z-50;
+}
+
+.navbar-container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.navbar-main {
+  @apply flex justify-between items-center h-16 md:h-20;
+}
+
+/* Logo styles */
+.navbar-logo {
+  @apply text-red-600 font-bold text-xl md:text-2xl hover:text-red-700 transition-colors;
+}
+
+/* Desktop navigation styles */
+.navbar-desktop {
+  @apply hidden md:flex items-center space-x-20;
+}
+
+.nav-links {
+  @apply flex items-center space-x-8;
+  
+}
+
+.nav-link {
+  /* @apply text-gray-700 hover:text-red-600 transition-colors text-sm font-medium; */
+  @apply text-gray-800 font-medium relative text-lg 
+          lg:text-base hover:text-[#D10000] transition-colors duration-300;
+  @apply after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-red-600 
+         after:transition-all after:duration-300 hover:after:w-full;
+}
+
+/* Join button styles */
+.join-button {
+  @apply bg-[#D10000] text-white px-6 py-2 rounded-sm text-sm font-medium
+         hover:bg-red-700 transition-colors duration-200;
+}
+
+.join-button.mobile {
+  @apply w-full;
+}
+
+/* Mobile menu button styles */
+.mobile-menu-button {
+  @apply md:hidden p-2 rounded-md text-gray-700 hover:text-red-600 transition-colors;
+}
+
+/* Mobile menu styles */
+.mobile-menu {
+  @apply md:hidden hidden;
+}
+
+.mobile-menu.show {
+  @apply block;
+}
+
+.mobile-menu-content {
+  @apply px-2 pt-2 pb-3 space-y-1 bg-white border-t;
+}
+
+.mobile-nav-link {
+  @apply block px-3 py-2 text-gray-700 hover:text-[#D10000] hover:bg-red-50 
+         rounded-md text-base font-normal transition-colors;
+}
+
+.mobile-join-wrapper {
+  @apply px-3 py-2;
+}
