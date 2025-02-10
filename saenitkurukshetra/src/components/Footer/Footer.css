@@ -1,0 +1,71 @@
+.footer {
+  @apply bg-black text-gray-400 pt-12 pb-8; /* Adjust padding for smaller screens */
+}
+
+.footer-container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8; /* Add better padding for smaller screens */
+}
+
+.footer-logo {
+  @apply mb-8; /* Adjust margin for smaller screens */
+}
+
+.footer-logo img {
+  @apply h-8;
+}
+
+.footer-logo-text {
+  @apply text-gray-500 text-xs sm:text-sm mt-2; /* Smaller text on smaller screens */
+}
+
+.footer-links {
+  @apply grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 mb-8; /* Adjust grid columns for responsiveness */
+}
+
+.footer-section {
+  @apply space-y-4;
+}
+
+.footer-section-title {
+  @apply text-white text-base sm:text-lg font-medium mb-4; /* Adjust font size for smaller screens */
+}
+
+.footer-nav {
+  @apply space-y-2;
+}
+
+.footer-nav-link {
+  @apply flex items-center gap-2 hover:text-white transition-colors duration-200 text-sm; /* Maintain readable size */
+}
+
+.social-links {
+  @apply flex flex-wrap items-center gap-4 mt-8; /* Allow wrapping on smaller screens */
+}
+
+.social-link {
+  @apply text-gray-400 hover:text-white transition-colors duration-200 text-sm; /* Adjust size */
+}
+
+.footer-bottom {
+  @apply mt-12 pt-8 border-t border-gray-800;
+}
+
+.footer-bottom-content {
+  @apply flex flex-col gap-4 text-center md:flex-row justify-between items-center text-xs text-gray-500; /* Center-align on mobile */
+}
+
+.footer-legal-links {
+  @apply flex flex-wrap items-center justify-center gap-4; /* Allow wrapping for smaller screens */
+}
+
+.footer-legal-link {
+  @apply hover:text-white transition-colors duration-200;
+}
+
+.country-selector {
+  @apply flex items-center gap-2 cursor-pointer hover:text-white transition-colors duration-200;
+}
+
+.country-flag {
+  @apply w-5 h-4 object-cover;
+}

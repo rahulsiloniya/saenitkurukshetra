@@ -1,0 +1,29 @@
+.team-card {
+  @apply relative overflow-hidden rounded-xl shadow-xl 
+         transform hover:-translate-y-2 transition-all duration-500;
+}
+
+.team-image {
+  @apply w-full h-72 lg:h-96 object-cover transform transition-transform duration-700
+         scale-100 group-hover:scale-110;
+}
+
+.team-overlay {
+  @apply absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent 
+         opacity-90 transition-opacity duration-300 group-hover:opacity-75;
+}
+
+.team-content {
+  @apply absolute bottom-0 left-0 p-8 w-full transform transition-transform duration-300
+         group-hover:translate-y-0;
+}
+
+.team-name {
+  @apply text-2xl lg:text-3xl font-bold text-white mb-4 
+         transform transition-all duration-300 group-hover:scale-105;
+}
+
+.team-description {
+  @apply text-gray-300 text-lg opacity-0 transform translate-y-4
+         transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0;
+}

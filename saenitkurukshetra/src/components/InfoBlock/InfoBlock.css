@@ -1,0 +1,55 @@
+.container {
+    @apply w-full max-w-6xl mx-auto p-6 my-6;
+  }
+  
+  .title-section {
+    @apply mb-8 text-center;
+  }
+  
+  .main-title {
+    @apply text-4xl font-bold mb-2;
+  }
+  
+  .highlight {
+    @apply text-red-600;
+  }
+  
+  .info-grid {
+    @apply grid md:grid-cols-2 gap-8 mb-12;
+  }
+  
+  .card-header {
+    @apply bg-red-600 text-white p-6;
+  }
+  
+  .card-title {
+    @apply text-2xl font-bold;
+  }
+  
+  .card-content {
+    @apply p-6;
+  }
+  
+  .card-text {
+    @apply text-gray-700 leading-relaxed;
+  }
+  
+  .stats-grid {
+    @apply grid md:grid-cols-4 gap-6;
+  }
+  
+  .stat-card {
+    @apply text-center p-6 hover:shadow-lg transition-shadow;
+  }
+  
+  .stat-icon {
+    @apply flex justify-center mb-4 text-red-600;
+  }
+  
+  .stat-title {
+    @apply font-bold text-lg mb-2;
+  }
+  
+  .stat-description {
+    @apply text-sm text-gray-600;
+  }
